@@ -27,9 +27,7 @@ public function behaviors()
 	return [
 		'ajax' => [
 			'class' => AjaxFilter::className(),
-			'actions' => [
-				'actionName' => ['ajax'],
-			],
+			'actions' => ['actionName', 'actionName2'],
 		],
 	];
 }
