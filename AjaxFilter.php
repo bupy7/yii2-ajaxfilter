@@ -13,7 +13,7 @@ use yii\web\MethodNotAllowedHttpException;
  * public function behaviors()
  * {
  *      return [
- *			'ajax' => [
+ *		    'ajax' => [
  *				'class' => AjaxFilter::className(),
  *				'actions' => [
  *					'actionName' => ['ajax'],
