@@ -12,12 +12,12 @@ use yii\web\HttpException;
  *
  * public function behaviors()
  * {
- *   return [
- *       'ajax' => [
- *           'class' => AjaxFilter::className(),
- *           'actions' => ['actionName', 'actionName2'],
- *       ],
- *   ];
+ *     return [
+ *         [
+ *             'class' => AjaxFilter::className(),
+ *             'actions' => ['actionName', 'actionName2'],
+ *         ],
+ *     ];
  * }
  * @author Vasilij Belosludcev http://mihaly4.ru
  * @version 0.1.0
