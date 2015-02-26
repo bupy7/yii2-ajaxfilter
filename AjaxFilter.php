@@ -7,7 +7,7 @@ use yii\base\Behavior;
 use yii\web\Controller;
 use yii\web\HttpException;
 
-/*
+/**
  * Filter deny or allow access to actions of controllers.
  *
  * public function behaviors()
