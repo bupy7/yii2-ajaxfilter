@@ -11,8 +11,8 @@ use yii\web\MethodNotAllowedHttpException;
  * Filter deny or allow access to actions of controllers.
  *
  * public function behaviors()
- *	{
- *		return [
+ * {
+ *      return [
  *			'ajax' => [
  *				'class' => AjaxFilter::className(),
  *				'actions' => [
@@ -20,7 +20,7 @@ use yii\web\MethodNotAllowedHttpException;
  *				],
  *			],
  *		];
- *	}
+ * }
  * @author Vasilij Belosludcev http://mihaly4.ru
  * @version 0.1.0
  */
