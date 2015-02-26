@@ -25,17 +25,13 @@ use bupy7\ajaxfilter\AjaxFilter;
 public function behaviors()
 {
 	return [
-		'ajax' => [
+		[
 			'class' => AjaxFilter::className(),
 			'actions' => ['actionName', 'actionName2'],
 		],
 	];
 }
 ```
-
-##Thanks
-
-[vov4ik08](https://github.com/vov4ik08)
 
 ##License
 
