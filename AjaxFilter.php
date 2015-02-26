@@ -41,6 +41,5 @@ class AjaxFilter extends Behavior
                 throw new MethodNotAllowedHttpException('Method Not Allowed. This url can only request via Ajax.');
             }
         }
-
     }
 } 
