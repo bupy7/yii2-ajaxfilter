@@ -1,23 +1,17 @@
 {
-    "name": "apollo/yii2-ajaxfilter",
+    "name": "bupy7/yii2-ajaxfilter",
     "description": "Yii2 Ajax filter",
-    "version": "0.0.1",
-    "homepage": "https://github.com/vov4ik08/yii2-aajxfilter",
-    "keywords": ["yii2","ajax-filter"],
-    "license": "MIT",
-
-
-
-
+    "version": "0.1.0",
+    "homepage": "https://github.com/bupy7/yii2-ajaxfilter",
+    "keywords": ["yii2", "ajax", "filter"],
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
     "require": {
-        "php": ">=5.4",
         "yiisoft/yii2": "*"
-
     },
-
     "autoload": {
         "psr-4": {
-            "Apollo\\": ""
+            "bupy7\\ajaxfilter": ""
         }
     }
 }
