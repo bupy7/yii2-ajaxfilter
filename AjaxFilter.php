@@ -1,29 +1,32 @@
 <?php
-/*
-* Ajax filter for yii2
-*
-* public function behaviors()
-*	{
-*		return [
-*			'ajax' => [
-*				'class' => AjaxFilter::className(),
-*				'actions' => [
-*					'actionName' => ['ajax'],
-*				],
-*			],
-*		];
-*	}
- */
 
-namespace Apollo;
+namespace bupy7/ajaxfilter;
 
-
+use Yii;
 use yii\base\Behavior;
 use yii\web\Controller;
-use yii\web\HttpException;
+use yii\web\MethodNotAllowedHttpException;
 
+/*
+ * Filter deny or allow access to actions of controllers.
+ *
+ * public function behaviors()
+ *	{
+ *		return [
+ *			'ajax' => [
+ *				'class' => AjaxFilter::className(),
+ *				'actions' => [
+ *					'actionName' => ['ajax'],
+ *				],
+ *			],
+ *		];
+ *	}
+ * @author Vasilij Belosludcev http://mihaly4.ru
+ * @version 0.1.0
+ */
 class AjaxFilter extends Behavior
 {
+    
     public $actions;
 
     public function events()
@@ -33,13 +36,9 @@ class AjaxFilter extends Behavior
 
     public function beforeAction($event)
     {
-
-
-        $action = $event->action->id;
-
-        if (isset($this->actions[$action])) {
-            if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) && !strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-                throw new HttpException(400, 'For this action  allowed only Ajax requests');
+        if (isset($this->actions[$event->action->id])) {
+            if (!Yii::$app->request->isAjax) {
+                throw new MethodNotAllowedHttpException('Method Not Allowed. This url can only request via Ajax.');
             }
         }
 
