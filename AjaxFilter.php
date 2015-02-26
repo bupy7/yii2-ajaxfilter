@@ -1,6 +1,6 @@
 <?php
 
-namespace bupy7/ajaxfilter;
+namespace bupy7\ajaxfilter;
 
 use Yii;
 use yii\base\Behavior;
