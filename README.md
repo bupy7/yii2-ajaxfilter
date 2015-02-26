@@ -17,7 +17,7 @@ or add
 
 to the **require** section of your **composer.json** file.
 
-#How use
+##How use
 
 ```php
 use bupy7\ajaxfilter\AjaxFilter;
@@ -34,6 +34,10 @@ public function behaviors()
 	];
 }
 ```
+
+##Thanks
+
+[vov4ik08](https://github.com/vov4ik08)
 
 ##License
 
