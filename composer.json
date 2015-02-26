@@ -1,6 +1,6 @@
 {
     "name": "bupy7/yii2-ajaxfilter",
-    "description": "Yii2 Ajax filter",
+    "description": "Filter deny or allow access to actions of controllers.",
     "version": "0.1.0",
     "homepage": "https://github.com/bupy7/yii2-ajaxfilter",
     "keywords": ["yii2", "ajax", "filter"],
