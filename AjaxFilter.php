@@ -28,7 +28,7 @@ class AjaxFilter extends Behavior
     /**
      * @var array Actions of controller which will be apply this filter.
      */ 
-    public $actions;
+    public $actions = [];
 
     public function events()
     {
