@@ -1,8 +1,8 @@
-#Ajax filter for Yii2
+# Ajax filter for Yii2
 
 Filter deny or allow access to actions of controllers.
 
-##Installation
+## Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 Either run
@@ -17,7 +17,7 @@ or add
 
 to the **require** section of your **composer.json** file.
 
-##How use
+## How use
 
 ```php
 use bupy7\ajaxfilter\AjaxFilter;
@@ -33,6 +33,6 @@ public function behaviors()
 }
 ```
 
-##License
+## License
 
 yii2-ajaxfilter is released under the BSD 3-Clause License.
